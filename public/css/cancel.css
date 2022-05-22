@@ -1,0 +1,14 @@
+#main .ticket-card form button{
+    border:none;
+    background-color: #03045E;
+    color:white;
+    padding:0.5rem 1rem;
+    border-radius:1rem;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+#main .ticket-card form button:hover{
+     background-color:#00B4D8;
+
+}

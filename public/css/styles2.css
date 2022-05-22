@@ -1,0 +1,53 @@
+body{
+  background-color: #00B4D8;
+}
+#base-form{
+   background:#00B4D8 url('/public/images/login.jpg') center center/cover;
+   
+}
+
+.form-section {
+       margin:5rem auto;
+       max-width:500px;
+       height:420px;
+       background-color: aquamarine;
+       border-radius: 2rem;
+
+}
+
+#base-form .form-section > div{
+  padding-top: 2rem;
+}
+
+.form-wrap{
+  padding:0.5rem;
+}
+.form-wrap .blank{
+  height:2px;
+  background-color: black;
+  width:27%;
+  display: inline-block;
+}
+
+.form-wrap h1{
+      padding:1.5rem;
+}
+
+
+.form-wrap label{
+     text-align:left;
+     padding:1rem;
+     text-align: left;
+     margin:0.25rem;
+}
+
+
+.form-wrap input{
+  width:200px;
+
+}
+
+.form-wrap button{
+  margin-top:1rem;
+  padding: 0.5rem 2rem;
+}

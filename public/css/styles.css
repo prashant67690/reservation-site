@@ -1,0 +1,342 @@
+:root{
+  --primary-color--:#00B4D8;
+  --footer-color:#CAF0F8;
+  --secondry-color:#03045E;
+  
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Montserrat";
+  text-align: center;
+
+}
+
+
+h1,h2,h3,h4,h5,h6{
+font-family: "Montserrat";
+font-weight: 700;
+line-height: 1.3; 
+}
+
+/* utility classes */
+
+.container{
+  margin:auto;
+  max-width:1500px;
+  padding:0 2rem;
+  overflow: hidden;
+}
+
+a{
+  text-decoration:none;
+}
+
+.big-heading
+{
+  
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding:2rem 1rem 1rem 1rem;
+
+}
+
+.big-caption{
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: 400;
+  padding:2rem;       
+}
+
+.py-1{padding:1rem 0; }
+.py-2{padding:1.5rem 0; }
+.py-3{padding:3rem 0; }
+
+.btn{
+  display: inline-block;
+  padding:0.6rem 0.2rem;
+  border-radius:10px;
+  background-color: #00B4D8;
+  color:white;
+}
+
+.btn-primary{
+  margin:2rem;
+  padding:1rem 1.5rem;
+}
+
+.m-heading{
+  color:white;
+  line-height:1.5;
+  font-size:3rem;
+}
+
+.sec-heading{
+  color:#0f0f0f;
+  font-size:3rem;
+  font-weight: 400;
+}
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 100;
+  top:0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+  
+} */
+
+/* navbar  */
+
+#title .navbar{
+  background:#0f0f0f;
+  position: sticky;
+  top:0;
+  color:white;
+  display: flex;
+  justify-content:space-between;
+  z-index: 1;
+  padding:1rem;
+  overflow:hidden;
+}
+
+#title ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin:0;
+}
+#title .navbar div > a{
+   display: inline-block;
+    color:white;
+    text-decoration: none;
+    font-size:2.5rem;
+}
+
+#title .navbar div ul li a{
+  color:#fff;
+  padding:0.75rem;
+}
+
+#title .navbar ul li a:hover{
+  background:#00B4D8;
+  border-radius: 5px;
+}
+
+
+/* header section */
+
+#header{
+  background:#333 url('/images/background-hai.jpg') no-repeat center center/cover;
+  height:100vh;
+  color:#f4f4f4;  
+
+}
+
+#header .form-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  position:absolute;
+  top:92px;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#header .form-section .form-wrap{
+
+    line-height:2;
+    padding:2rem;
+}
+
+#header .form-section .form-wrap > div input{
+    height:50px;
+    width:200px;
+    border:solid 2px #333;
+    border-radius: 10px;
+    border:none;
+}
+
+#header .form-section .form-wrap > div select{
+  width:200px;
+  height:50px;
+  border-radius: 2rem;
+  border:none;
+}
+
+#header .form-section .form-wrap > div input:nth-child(3){
+    width:50px;
+    border-radius: 50%;
+    margin:0 1rem;
+}
+
+
+
+/* specs css */
+
+/* destinations section */
+
+#dest{
+  background-color:#9ADCFF;
+  background-color: white;
+  border:#ddd 2px solid;
+  margin:3rem 2rem;
+  line-height: 1.2;
+  border-radius:2rem;
+  box-shadow: 5px 5px 20px 5px #00000026 ;
+}
+
+#dest .text{
+  margin:3rem; 
+}
+
+#dest .cards a{
+    text-decoration: none;
+    color:#03045E;
+}
+
+#dest .cards a:hover{
+  color:#00B4D8;
+  
+}
+
+#dest .cards img{
+
+  height:300px;
+  width:420px;
+  border-radius: 10px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0 ;
+}
+
+#dest .city {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0 2rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+#dest .city .cards{
+  /* gap: 2rem; */
+  box-shadow: 2px 2px 20px 2px #00000026;
+  height:425px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+#dest .city .cards h3{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#prices{
+  margin-bottom:2rem;
+  border: #000000 2px solid;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:0.5rem ;
+}
+
+#dest .city .cards .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dest .city .cards .box h4{
+   font-weight:400;
+   
+}
+
+#dest .city .cards .box a{
+  text-decoration: none;
+  background-color: #000000;
+  color:white;
+  padding:0.5rem 1rem;
+  border-radius: 10px;
+}
+
+#dest .city .cards .box a:hover{
+   opacity: 0.8;
+}
+
+#dest .city .cards .box a+a{
+  padding:1.2rem 1rem;
+}
+/* pre-section */
+
+.premium-section{
+
+  padding:2rem;
+
+}
+
+.pre-img{
+     border-radius: 2rem;
+     height:40rem;
+     width:85rem;
+}
+
+
+/* footer section */
+
+.footer-section{
+  line-height: 2;
+  background-color:#03045E;
+  color:#00B4D8;
+}
+
+.bottom-img{
+    margin:2% 1%;
+}
+
+#footer .footer-options > div{
+  height:200px;
+  width:200px;
+
+}
+
+
+#footer .footer-options{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  align-content: center;
+  padding:2rem;
+
+}
+
+#footer .footer-options .list-1{
+  list-style: none;
+  text-align: left;
+}
+
+
+#footer .footer-options .list-1 li a{
+  color:#00B4D8;
+
+}
+
+#footer .footer-options .list-1 li a:hover{
+  color:#00B4D8;
+}
+
+#footer .copyright{ 
+       border-top:solid 1px;
+       padding:2rem; 
+}

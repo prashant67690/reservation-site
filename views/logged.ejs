@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BookIT</title>
+
+    <!-- bootsratp linking -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- google fonts linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Merriweather&family=Montserrat:wght@100;400;700;900&family=Sacramento&family=Titillium+Web&family=Ubuntu&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome cdn -->
+    <script src="https://kit.fontawesome.com/c2be89540f.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- site icon -->
+    <link rel="icon" href="images/toy-train.png">
+  </head>
+  <body>
+
+    <section id="title">
+      <nav class="navbar">
+        <div class="container">
+        <a href="/loggedin"><i class="fa fa-train"></i>Book<span style="color:#00B4D8;">IT</span></a>
+           
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/userbooking">My Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userfood">Food on Train</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/usercancel">Cancel Ticket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/usercontact">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <span><%= user %></span>
+            <a class="nav-link" href="/signin"> Logout</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+    
+</section>
+
+
+<section id="header"> 
+
+  <div class="form-section ">
+    <div class="headings">
+      <h1 class="big-heading">Book your Destination Ride here</h1>
+      <h2 class="big-caption">And Enjoy Your Journey</h2>
+    </div>
+    
+    <form class="form-wrap" action="/book" method="post">
+    <div >
+      <input type="text" name="from" placeholder=" From" autocomplete="off">
+      <input type="text" name="to" placeholder=" To" autocomplete="off">
+      <input type="date">
+  
+     <!-- dropdown menu -->
+      <select class="dropdown" name="category">
+      <option selected>Choose Category</option>
+      <option value="1">1 AC</option>
+      <option value="2">2 AC</option>
+      <option value="3">3 AC</option>
+      <option value="4">Sleeper</option>
+      </select>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+  </section>
+  
+  <section id="dest">
+    <div class="container">
+      <div class="text">
+        <h1 class="sec-heading">Popular Destinations For Holidays </h1>
+        <p>Plan your trip exclusively on BookIT</p>
+      </div>
+
+      <div class="city">
+        <div class="cards">
+        <a href="#"> 
+          <img class="destination-img" src="images/Jaipur.jpg" alt="Card image">
+         
+          <div id="prices">
+            <h3 class="feature-title card-title">Jaipur</h3>
+            <div class="box">
+              <h4>Price:<span id="Prices"></span></h4>
+              <a href="#">Book Now</a>
+            </div>
+            
+          </div>
+          </a></div>
+
+          <div class="cards">
+          <a href="#">
+            <img class="destination-img" src="images/amritsar.jpg" alt="Card image">
+            
+            <div id="prices">
+             
+              <h3 class="feature-title card-title">Amritsar</h3>
+              <div class="box">
+                <h4>Price:<span id="Prices"></span></h4>
+                <a href="#">Book Now</a>
+              </div>
+              
+            </div></a>
+            </div>
+
+            <div class="cards">
+            <a href="#">
+          <img class=" destination-img" src="images/delhi.jpg" alt="Card image">
+          
+          <div id="prices">
+            
+            <h3 class="feature-title card-title">Delhi</h3>
+           
+            <div class="box">
+              <h4>Price:<span id="Prices"></span></h4>
+              <a href="#">Book Now</a>
+            </div>
+            
+          </div></a>
+          </div>
+          <div class="cards">
+          <a href="#">
+            <img class="destination-img" src="images/kochi.jpg" alt="Card image">
+            
+            <div id="prices">
+              
+              <h3 class="feature-title card-title">kochi</h3>
+              
+              <div class="box">
+                <h4>Price:<span id="Prices"></span></h4>
+                <a href="#">Book Now</a>
+              </div>
+              
+            </div></a>
+            </div>
+            <div class="cards">
+            <a href="#">
+            <img class="destination-img" src="images/chennai.jpg" alt="Card image">
+          
+          <div id="prices">
+            <h3 class="feature-title card-title">Chennai</h3>
+            <div class="box">
+              <h4>Price:<span id="Prices"></span></h4>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </a>
+          </div>
+          
+          <div class="cards">
+          <a href="#">
+              <img class="destination-img" src="images/ghati.jpg" alt="Card image">
+              
+              <div id="prices">
+              
+                <h3 class="feature-title card-title">Guwahati</h3>
+                <div class="box">
+                  <h4>Price:<span id="Prices"></span></h4>
+                  <a href="#">Book Now</a>
+                </div>
+                
+              </div>
+            </a>
+          </div>
+          
+          <div class="cards">
+         <a href="#">
+          <img class=" destination-img" src="images/ahemdabd.jpg" alt="Card image">
+          
+          <div id="prices">
+         
+            <h3 class="feature-title card-title">Ahemdabad</h3>
+            <div class="box">
+              <h4>Price:<span id="Prices"></span></h4>
+              <a href="#">Book Now</a>
+            </div>
+            
+          </div></a>
+          </div>
+          
+          <div class="cards">
+       <a href="#">
+          <img class="destination-img" src="images/mumbai.jpg" alt="Card image">
+          
+          <div id="prices">
+            
+            <h3 class="feature-title card-title">Mumbai</h3>
+            <div class="box">
+              <h4>Price:<span id="Prices"></span></h4>
+              <a href="#">Book Now</a>
+            </div>
+            
+          </div>
+      </div>
+        </a>
+         
+
+        <div class="cards">
+          <a href="#">
+            
+              <img class="destination-img" src="images/varansi.jpg" alt="Card image">
+             
+              <div id="prices">
+    
+                <h3 class="feature-title card-title">Varansi</h3>
+                <div class="box">
+                  <h4>Price:<span id="Prices"></span></h4>
+                  <a href="#">Book Now</a>
+                </div>
+                
+              </div>
+            </a>
+          </div>
+      </div>
+        
+    </div>
+
+  </section>
+
+  <!-- premium section -->
+  <section class="premium-section" id="pre">
+    <h1 class="sec-heading">Inspiration For Your Next Trip</h1>
+    <br>
+<div class="container pre-div">
+  <div id="premium-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#premium-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#premium-carousel" data-slide-to="1"></li>
+      <li data-target="#premium-carousel" data-slide-to="2"></li>
+      </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="pre-img" src="images/shikara.jpg" alt="First slide" srcset="images/shikara.jpg 4x">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Enjoy Skiing and Shikara rides in Magical Kashmir <a href="#" style="color: white;">Book now</a></h2>
+          <h3>Pay Just <i class="fa-solid fa-indian-rupee-sign"></i>1000 for Booking</h3>
+            <i>upto 40% off</i>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img class="pre-img" src="images/mussorie.jpg" alt="Second slide" srcset="images/mussorie.jpg 4x">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Mussoorie is Open for the Travellers <a href="/signin" style="color: white;">Book now</a></h2>
+          <h3>Pay Just <i class="fa-solid fa-indian-rupee-sign"></i>4500 for Booking</h3>
+          <i>upto 20% off</i>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="pre-img" src="images/goa.jpg" alt="Third slide" srcset="images/goa.jpg 1x">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Enjoy Your Summer Vacations in the Breezy Goa <a href="#" style="color: white;">Book now</a></h2>
+          <h3>Pay Just <i class="fa-solid fa-indian-rupee-sign"></i>1000 for Booking</h3>
+          <i>upto 27% off</i>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#premium-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#premium-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+</section>
+<%- include('partials/footer') -%>

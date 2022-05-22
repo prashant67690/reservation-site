@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BookIT</title>
+
+    <!-- bootsratp linking -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- google fonts linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Merriweather&family=Montserrat:wght@100;400;700;900&family=Sacramento&family=Titillium+Web&family=Ubuntu&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome cdn -->
+    <script src="https://kit.fontawesome.com/c2be89540f.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <!-- site icon -->
+    <link rel="icon" href="images/toy-train.png">
+  </head>
+  <style>
+    .form-section{
+      height: 820px;
+      padding:2rem;
+    }
+
+    .form-group label{
+      display: block;
+      font-size:1.2rem;
+      text-align: left;
+      padding-left:2rem;
+      margin:20px 0;
+    }
+
+    .form-group input{
+        width: 90%;
+        padding: 5px;
+        border:solid rgb(167, 166, 166) 2px;
+        border-radius: 5px;
+    }
+
+  </style>
+  <body>
+
+    <section id="title">
+      <nav class="navbar">
+        <div class="container">
+        <a href="/"><i class="fa fa-train"></i>Book<span style="color:#00B4D8;">IT</span></a>
+           
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/mybooking">My Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/food">Food on Train</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cancel">Cancel Ticket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signin"> Login</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup"> Signup</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+    
+</section>
+
+<section id="base-form">
+  <div class="form-section">
+    
+    <h1>Sign Up</h1>
+    <p>It's free and only takes a minute</p>
+    <form action="/signup" method="post">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" name="firstName" id="first-name" />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="lastName" id="last-name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input type="password" name="password2" id="password2" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn" style="padding: 0.5rem 1.3rem;">Sign Up</button>
+      </div>
+      <hr style="color:black; height: 6px;">
+      <p class="bottom-text">
+        By clicking the Sign Up button, you agree to our
+        <a href="/contact">Terms & Conditions</a> and
+        <a href="/contact">Privacy Policy</a>
+      </p>
+    </form>
+  </div>
+</section>
+    
+
+
+<%- include("partials/footer") -%>
